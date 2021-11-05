@@ -7,11 +7,15 @@ import styled from 'styled-components';
 
 const H1 = styled.h1`
 	font-size: 1rem;
-	height: 30px;
+	height: 60px;
 	background-color: #4a4eb4;
 	color: white;
 	text-align: center;
 	vertical-align: center;
+`;
+
+const Section = styled.section`
+	text-align: left;
 `;
 
 const Character = (props) => {
@@ -26,18 +30,27 @@ const Character = (props) => {
 				<Card.Body>
 					<H1>{character.name}</H1>
 					<h3>Details:</h3>
-					<h4>Birth Year: {character.birth_year}</h4>
-					<h4>Gender: {character.gender}</h4>
-					<h4>
-						<a href={character.homeworld}>Home World</a>
-					</h4>
+					<p>
+						<strong>Birth Year:</strong> {character.birth_year}
+						<br />
+						<strong>Gender:</strong> {character.gender}
+						<br />
+						<strong>Skin Color:</strong> {character.skin_color}
+						<br />
+						<strong>Hair Color:</strong> {character.hair_color}
+						<br />
+						<strong>Eye Color:</strong> {character.eye_color}
+					</p>
+
 					<h3>Character Films</h3>
-					<ul>
-						<li>{character.films[0]}</li>
-						<li>{character.films[1]}</li>
-						<li>{character.films[2]}</li>
-						<li>{character.films[3]}</li>
-					</ul>
+					<Section>
+						<ul>
+							<li>{character.films[0]}</li>
+							<li>{character.films[1]}</li>
+							<li>{character.films[2]}</li>
+							<li>{character.films[3]}</li>
+						</ul>
+					</Section>
 				</Card.Body>
 			</Card>
 		</>
