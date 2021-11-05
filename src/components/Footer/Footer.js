@@ -14,14 +14,13 @@ const Footer = () => {
 		display: flex;
 		align-content: center;
 		background-color: #4a4eb4;
+		height: 60px;
 	`;
 
 	return (
 		<>
 			<Div class='footer-container'>
-				<section>
-					<Img src={logo} />
-				</section>
+				<section></section>
 			</Div>
 		</>
 	);

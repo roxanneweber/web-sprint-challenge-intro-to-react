@@ -7,7 +7,7 @@ import styled from 'styled-components';
 const Header = () => {
 	// 🔥 Make sure the parent of PostHeader is passing the right props!
 	const Img = styled.img`
-		height: 160px;
+		width: 200px;
 		align: left;
 	`;
 	const Div = styled.div`
@@ -18,16 +18,12 @@ const Header = () => {
 
 	return (
 		<>
-			<Div>
-				<Div class='header-container'>
-					<section>
-						<Img src={logo} />
-					</section>
-				</Div>
-				<section className='search-bar'>
+			<section>
+				<Div class='footer-container'>
+					<Img src={logo} />
 					<SearchBar />
-				</section>
-			</Div>
+				</Div>
+			</section>
 		</>
 	);
 };

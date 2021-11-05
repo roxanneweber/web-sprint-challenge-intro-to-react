@@ -4,12 +4,15 @@
 }
 
 .header-container {
-	background-color: lightgray;
 	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: start;
 	align-items: center;
-	justify-content: space-around;
+	align-content: space-around;
 }
 
 .search-bar {
-	align: right;
+	flex: 0 0 auto;
+	margin: 10px;
 }
