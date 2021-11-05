@@ -1,28 +1,29 @@
 import React from 'react';
 import './Characters.css';
 import LikeSection from '../LikeSection/LikeSection';
+import banner from '../../assets/card-header.png';
+import { Button } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 
-const Character = () => {
+const Character = (props) => {
+	const { character } = props;
+
+	console.log(props);
 	return (
 		<>
 			<div className='card-container'>
-				<div className='card'>
-					<picture className='thumbnail'>
-						<img
-							src='http://www.abbeyjfitzgerald.com/wp-content/uploads/2017/02/image-example-01.jpg'
-							alt='a name here'
-						/>
-					</picture>
-					<div className='card-content'>
-						<h2>Vacation Image 01</h2>
-						<p>
-							TUX re-inventing the wheel, and move the needle. Feature
-							creep dogpile that but diversify kpis but market-facing.
-						</p>
-					</div>
-
+				<Card style={{ width: '70rem' }}>
+					<Card.Img variant='top' src={banner} />
+					<Card.Body>
+						<Card.Title>{character.name}</Card.Title>
+						<Card.Text>
+							Some quick example text to build on the card title and make
+							up the bulk of the card's content.
+						</Card.Text>
+						<Button variant='primary'>Go somewhere</Button>
+					</Card.Body>
 					<LikeSection />
-				</div>
+				</Card>
 			</div>
 		</>
 	);

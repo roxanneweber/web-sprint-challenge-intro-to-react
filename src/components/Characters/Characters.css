@@ -162,6 +162,7 @@ img {
 /* Add some padding inside the card container */
 .card-container {
 	padding: 2px 16px;
+	display: flex;
 }
 
 .card a {
