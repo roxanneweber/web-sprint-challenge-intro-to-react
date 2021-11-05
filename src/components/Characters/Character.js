@@ -2,29 +2,26 @@ import React from 'react';
 import './Characters.css';
 import LikeSection from '../LikeSection/LikeSection';
 import banner from '../../assets/card-header.png';
-import { Button } from 'react-bootstrap';
 import { Card } from 'react-bootstrap';
+import styled from 'styled-components';
+
+const H1 = styled.h1`
+	font-size: 1rem;
+`;
 
 const Character = (props) => {
 	const { character } = props;
 
-	console.log(props);
+	//console.log(props);
+
 	return (
 		<>
-			<div className='card-container'>
-				<Card style={{ width: '70rem' }}>
-					<Card.Img variant='top' src={banner} />
-					<Card.Body>
-						<Card.Title>{character.name}</Card.Title>
-						<Card.Text>
-							Some quick example text to build on the card title and make
-							up the bulk of the card's content.
-						</Card.Text>
-						<Button variant='primary'>Go somewhere</Button>
-					</Card.Body>
-					<LikeSection />
-				</Card>
-			</div>
+			<Card style={{ width: '18rem' }}>
+				<Card.Img variant='top' src={banner} />
+				<Card.Body>
+					<H1>{character.name}</H1>
+				</Card.Body>
+			</Card>
 		</>
 	);
 };

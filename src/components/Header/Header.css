@@ -8,5 +8,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	border: solid red 1px;
+}
+
+.search-bar {
+	align: right;
 }
