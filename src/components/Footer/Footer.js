@@ -11,11 +11,9 @@ const Footer = () => {
 				<section class='footer-logo'>
 					<h3>Footer logo here</h3>
 				</section>
-			</div>
-			<div class='search-bar-container'>
+
 				<section className='search-bar'>
 					<SearchBar />
-					<h2>the search will go here</h2>
 				</section>
 			</div>
 		</>

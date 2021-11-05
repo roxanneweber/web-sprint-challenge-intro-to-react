@@ -10,6 +10,7 @@ const Header = () => {
 			<div class='header-container'>
 				<section class='logo'>
 					<h1 className='Header'>The Obi-Wan Report</h1>
+					<h2>Which is your favorite character?</h2>
 				</section>
 
 				<section className='search-bar'>
