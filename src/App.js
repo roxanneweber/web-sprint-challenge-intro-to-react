@@ -1,7 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './App.css';
-import Cards from './components/Cards';
+import Characters from './components/Characters/Characters';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 if (process.env.NODE_ENV === 'development') {
 	const { worker } = require('./mocks/browser');
@@ -16,8 +17,9 @@ const App = () => {
 
 	return (
 		<div className='App'>
-			<h1 className='Header'>The Obi-Wan Report</h1>
-			<Cards />
+			<Header />
+			<Characters />
+			<Footer />
 		</div>
 	);
 };

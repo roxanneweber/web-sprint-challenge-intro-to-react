@@ -1,18 +1,18 @@
 import React from 'react';
-import './css/index.css';
-import Card from './Card';
+import './Characters.css';
+import Character from './Character';
 
-const Cards = () => {
+const Characters = () => {
 	return (
 		<main class='main-area'>
 			<div class='centered'>
-				<h1>Here are my cards!</h1>
+				<h1>Here are my individual characters!</h1>
 				<section class='cards'>
-					<Card />
+					<Character />
 				</section>
 			</div>
 		</main>
 	);
 };
 
-export default Cards;
+export default Characters;

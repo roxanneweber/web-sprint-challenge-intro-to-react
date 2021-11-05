@@ -1,5 +1,6 @@
 import React from 'react';
-import './css/index.css';
+import './Characters.css';
+import LikeSection from './LikeSection';
 
 const Card = () => {
 	return (
@@ -17,6 +18,7 @@ const Card = () => {
 						</p>
 					</div>
 				</a>
+				<LikeSection />
 			</article>
 		</>
 	);
