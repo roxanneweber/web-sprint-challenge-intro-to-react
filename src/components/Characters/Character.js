@@ -26,23 +26,27 @@ const Character = (props) => {
 	return (
 		<>
 			<Card style={{ width: '18rem' }}>
-				<Card.Img variant='top' src={banner} />
+				<Card.Img src={banner} alt='Card image' />
+				<Card.ImgOverlay>
+					<Card.Title>{character.name}</Card.Title>
+				</Card.ImgOverlay>
 				<Card.Body>
-					<H1>{character.name}</H1>
-					<h3>Details:</h3>
-					<p>
-						<strong>Birth Year:</strong> {character.birth_year}
-						<br />
-						<strong>Gender:</strong> {character.gender}
-						<br />
-						<strong>Skin Color:</strong> {character.skin_color}
-						<br />
-						<strong>Hair Color:</strong> {character.hair_color}
-						<br />
-						<strong>Eye Color:</strong> {character.eye_color}
-					</p>
+					<Card.Title>Details:</Card.Title>
+					<Card.Text>
+						<p>
+							<strong>Birth Year:</strong> {character.birth_year}
+							<br />
+							<strong>Gender:</strong> {character.gender}
+							<br />
+							<strong>Skin Color:</strong> {character.skin_color}
+							<br />
+							<strong>Hair Color:</strong> {character.hair_color}
+							<br />
+							<strong>Eye Color:</strong> {character.eye_color}
+						</p>
+					</Card.Text>
 
-					<h3>Character Films</h3>
+					<Card.Title>Character Films</Card.Title>
 					<Section>
 						<ul>
 							<li>{character.films[0]}</li>
